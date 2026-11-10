@@ -6,6 +6,7 @@
         android:label="Callback Leak Demo"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <activity android:name=".ComparisonActivity" android:exported="false" />
         <activity android:name=".ReceiverDemoActivity" android:exported="false" />
         <activity android:name=".ListenerDemoActivity" android:exported="false" />
         <activity android:name=".ServiceDemoActivity" android:exported="false" />
