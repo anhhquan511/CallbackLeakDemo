@@ -15,13 +15,12 @@ APK đã được build, nhưng chưa chạy trên thiết bị hoặc emulator 
 
 ## 1. Mở và chạy trên Windows
 
-1. Giải nén ZIP vào đường dẫn đơn giản, ví dụ `D:\AndroidDemos\android_callback_leak_demo`.
-2. Android Studio → Open → chọn thư mục chứa `settings.gradle.kts`, KHÔNG chọn riêng thư mục `app`.
-3. Đợi Gradle Sync tải dependency. Cần Internet lần đầu.
-4. Trong SDK Manager, cài Android SDK Platform 35 và Android SDK Build-Tools 34.0.0 nếu IDE yêu cầu. Compile SDK 35 không có nghĩa điện thoại phải chạy Android 15.
-5. Gradle JDK: dùng JDK 17 hoặc JDK 21 tương thích với Gradle 8.9. Nếu gặp lỗi JDK, đặt về JDK 17 trong Settings → Build, Execution, Deployment → Build Tools → Gradle.
-6. Chạy bằng nút Run với build variant `debug`, không dùng Attach debugger trong lúc chờ LeakCanary.
-7. Chấp nhận quyền thông báo nếu được hỏi trên Android 13+ để thấy thông báo LeakCanary. Nếu từ chối, có thể xem Logcat hoặc biểu tượng Leaks do công cụ cung cấp.
+1. Android Studio → Open → chọn thư mục chứa `settings.gradle.kts`, KHÔNG chọn riêng thư mục `app`.
+2. Đợi Gradle Sync tải dependency. Cần Internet lần đầu.
+3. Trong SDK Manager, cài Android SDK Platform 35 và Android SDK Build-Tools 34.0.0 nếu IDE yêu cầu. Compile SDK 35 không có nghĩa điện thoại phải chạy Android 15.
+4. Gradle JDK: dùng JDK 17 hoặc JDK 21 tương thích với Gradle 8.9. Nếu gặp lỗi JDK, đặt về JDK 17 trong Settings → Build, Execution, Deployment → Build Tools → Gradle.
+5. Chạy bằng nút Run với build variant `debug`, không dùng Attach debugger trong lúc chờ LeakCanary.
+6. Chấp nhận quyền thông báo nếu được hỏi trên Android 13+ để thấy thông báo LeakCanary. Nếu từ chối, có thể xem Logcat hoặc biểu tượng Leaks do công cụ cung cấp.
 
 Thiết bị: Android 8.0/API 26 trở lên; đề xuất điện thoại thật hoặc emulator Android 13/API 33. Không cần server, Firebase, cơ sở dữ liệu hay quyền Internet ở thời điểm chạy app. Máy tính vẫn cần Internet để tải Gradle/dependency khi build.
 
